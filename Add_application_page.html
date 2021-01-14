@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Application_stage.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <title>Application stages</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="bgimg">
+            <div class="overlay">
+               <nav class="navbar navbar-expand-md navbar-dark bg-dark nav-colour">
+                  <div class="container">
+                      <a class="navbar-brand font-weight-bold" href="#" >TrackEasy.com</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span></button>
+
+                       <a class="nav-link" href="#"><button class="btn btn-info btn-sm text-white border border-white">Back</button></a>
+
+
+                   </div>
+               </nav>
+                        
+            </div>
+        </div>
+
+        <!--Table of Application Stages-->
+
+        <table class="table">
+        <p style="background-color: white;"> </p> 
+        <h1 style="background-color: rgb(37, 175, 218); color: white;font-size: 18px;padding-left: 15px;padding-top:10px;padding-bottom:15px;display:inline-flexbox;"><i class="fa fa-location-arrow" aria-hidden="true"></i> Application Stages<button type="button" class="btn btn-primary btn-sm" style="float: right;background-color: rgb(103, 60, 182);font-weight: bold;font-size: 11px;" data-toggle="modal" data-target="#AddStage"><i class="fa fa-plus" aria-hidden="true"></i> ADD APPLICATION STAGE</button></h1>
+
+        <thead>
+            <tr>
+              <th scope="col">STAGE</th>
+              <th scope="col"></th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Applied</th>
+              <td><button type="button" class="btn btn-primary btn-sm btn1"  style="padding-left: 15px;padding-right: 15px;">Edit</button><button type="button" class="btn btn-secondary btn-sm btn1" id="t-btn">Delete</button></td>
+            </tr>
+
+            <tr>
+                <th scope="row">First Interview</th>
+                <td><button type="button" class="btn btn-primary btn-sm btn1" style="padding-left: 15px;padding-right: 15px;">Edit</button><button type="button" class="btn btn-secondary btn-sm btn1" id="t-btn">Delete</button></td>
+              </tr>
+
+            <tr>
+                <th scope="row">Hired</th>
+                <td><button type="button" class="btn btn-primary btn-sm btn1"  style="padding-left: 15px;padding-right: 15px;">Edit</button><button type="button" class="btn btn-secondary btn-sm btn1" id="t-btn">Delete</button></td>
+            </tr>
+              
+              
+            
+          </tbody>
+        </table>
+
+       <!--Popup to add an Application Stage-->
+        <div class="modal" id="AddStage" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>  
+              
+                <div class="form-popup" id="myForm">
+                  <form class="form-container">
+                    <button type="button" class="close"data-dismiss ="modal" style="margin-right: 20px;">&times;</button>
+                    <!-- <h5 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;padding-left: 50px;font-size: 25px;">Add Application Stage</h5><br> -->
+                
+                    <label for="StageName"style="padding-left: 50px;font-size:20px;"><b>Stage Name</b></label><br>
+                    <input type="text" placeholder="Enter Stage Name" name="StageName" style="margin-left: 50px;">
+                </form>
+              </div>
+              <div class="modal-footer mod1" >
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:rgb(236, 78, 51);">Save</button>
+                
+              
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+    </main>
+</body>
+
+<!-- Optional JavaScript -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
